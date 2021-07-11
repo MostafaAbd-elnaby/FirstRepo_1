@@ -49,7 +49,6 @@ ul {
 
 /* End Global Rules  */
 /* Start Special Classes*/
-
 .main-heading {
     text-align: center;
     /* padding: 100px; */
@@ -117,6 +116,42 @@ header .container img {
     border-radius: 50%;
     padding-top: 10px;
 }
+header .logo-setting {
+    display: flex;
+}
+header .logo-setting .theme {
+    background-color: #333;
+    width: 100px;
+    border-radius: 50% 50% 50% 5%;
+    /* display: none; */
+    transition: 0.3s;
+}
+header .logo-setting:hover .theme {
+    display: block;
+}
+header .logo-setting .theme h4 {
+    color: #FFF;
+    text-align: center;
+    margin: 15px;
+}
+header .logo-setting .theme ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+header .logo-setting .theme ul li {
+    background-color: #7777;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 5px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+header .logo-setting .theme ul .active {opacity: 1;    border: 2px solid #FFF;}
+header .logo-setting .theme ul li:first-child {background-color: #ddb051 ;}
+header .logo-setting .theme ul li:nth-child(2) {background-color: #e7412bea ;}
+header .logo-setting .theme ul li:last-child {background-color: #2ddf86 ;}
 header nav {
     display: flex;
     flex: 1;
@@ -904,9 +939,9 @@ header nav .form i {
     display: flex;
     /* justify-content: space-around; */
 }
-.contact-us .content form {
-    /* max-width: 50%; */
-}
+/* .contact-us .content form {
+    /* max-width: 50%; 
+} */
 @media (max-width : 991px) {
     .contact-us .content {
         align-items: center;
